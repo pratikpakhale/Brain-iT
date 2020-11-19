@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="game.css" >
+<link rel="stylesheet" type="text/css" href="other.css" >
+<link rel="icon" href="icon.png" >
+<script src="index.js"></script>
+<script src="other.js"></script>
+<body onload="captcha();chance();">
+<div id="my_game" >
+<center >
+<input type=tel onkeyup="pass_focus('two');" id=one min="0" name="black" max="9" maxlength="1"/>&nbsp;
+<input type=tel onkeyup="pass_focus('three');" id=two min="0" name="black" max="9" maxlength="1"/>&nbsp;
+<input type=tel onkeyup="pass_focus('four');" id=three min="0" name="black" max="9" maxlength="1"/>&nbsp;
+<input type=tel id=four min="0" name="black" max="9"  maxlength="1"/>
+<br /><br />
+<button onclick="submit();" id="s_btn" style="vertical-align:middle;" ><img src="submit.png" id="submit" /></button>
+<button id=rest style="height:40px;width:140px;vertical-align:middle;border-radius:8px;background-color:#40b0ed;display:none;" onclick="window.location.reload();" ><font color="white" size="5">Reset</font></button>
+<br />
+<button onclick="go_home();" ><img src="home.png" id="home_img" /></button><br />
+<font size="3"><b>Chances left:</b>&nbsp;<input type="text" style="width:20px;height:20px;" id="chances" readonly="readonly" />
+<br /><br /><br />
+<hr id="myhr" />
+<br /><br /><br />
+<div id="prev">
+<div id="one" >
+<font size="5"><b>1]</b></font>
+<input type=number id="a1" name="skyblue" readonly="readonly"/>&nbsp;
+<input type=number id="a2" name="skyblue" readonly="readonly"/>&nbsp;
+<input type=number id="a3" name="skyblue" readonly="readonly"/>&nbsp;
+<input type=number id="a4" name="skyblue" readonly="readonly"/>&nbsp;
+</div><br />
+<div id="two" >
+<font size="5"><b>2]</b></font>
+<input type=number id="b1" name="skyblue" readonly="readonly"/>&nbsp;
+<input type=number id="b2" name="skyblue" readonly="readonly"/>&nbsp;
+<input type=number id="b3" name="skyblue" readonly="readonly"/>&nbsp;
+<input type=number id="b4" name="skyblue" readonly="readonly"/>&nbsp;
+</div><br />
+<div id="three" >
+<font size="5"><b>3]</b></font>
+<input type=number id="c1" name="skyblue" readonly="readonly"/>&nbsp;
+<input type=number id="c2" name="skyblue" readonly="readonly"/>&nbsp;
+<input type=number id="c3" name="skyblue" readonly="readonly"/>&nbsp;
+<input type=number id="c4" name="skyblue" readonly="readonly"/>&nbsp;
+</div>
+</div>
+<br />
+
+</center>
+</div>
+<!--              ----> 
+
+<center><span id=breaks ><br /><br /><br /><br /></span>
+<div id=home >
+<img src="card-male.png" id="card-male" />
+<img src="card-female.png" id="card-female" />
+<br /><input type="text" id="name_text1" class="name_txt" readonly="readonly"/><br /><br />
+<center>
+<div id="score_content" style="display:none;">
+<input type=text align=center id=win readonly=readonly style="display:none;height:50px;width:200px;"/>
+<br />
+<span id="values">
+<b><font size="3">The Code Was:&nbsp;</font></b>
+<input type="text" style="width:20px;height:20px;" id="pass_one" readonly="readonly"/>
+<input type="text" style="width:20px;height:20px;" id="pass_two" readonly="readonly"/>
+<input type="text" style="width:20px;height:20px;" id="pass_three" readonly="readonly"/>
+<input type="text" style="width:20px;height:20px;" id="pass_four" readonly="readonly"/>
+<br /><br />
+</span>
+</div>
+<button onclick="" ><img src="help.png" id="help" /></button>
+<button onclick=""><img src="info.png" id="info" /></button>
+<button onclick="submit_LG();" ><img src="LG.png" id="LG" /></button>
+
+</div>
+<span id=breaks_end ><br /><br /></span>
+<div id="gender" >
+<br />
+<b>Select your<br />Gender:</b>
+<br /><br />
+<button id="male_gender" class=gender_button onclick="submit_male();" >Male</button>&nbsp;&nbsp;
+<button id="female_gender" class=gender_button onclick="submit_female();" >Female</button>
+</div>
+<div id="name" >
+<br />
+<b>Enter your<br />Name:<br /><br /></b>
+<input type="text" id="name_text" onkeydown="if (event.keyCode == 13) submit_name()" class="name_txt" maxlength="10"/>
+</div>
+
+</center>
+
+</body>
+<script>
+function redirect(name)
+{	
+	window.location.href="+name+.html";
+}
+</body>
+#help
+{
+	display:none;
+}
+.yellow
+{
+	height:5px;
+	width:5px;
+	background-color:yellow;
+}
+.red
+{
+	height:5px;
+	width:5px;
+	background-color:red;
+}
+.data
+{
+	font-size:25px;
+	font-family:"Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	font-weight:bold;
+}
+</html>

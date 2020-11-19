@@ -1,0 +1,145 @@
+body
+{
+	margin-top:25px;
+	background-color:#f1f1f1;
+}
+#my_game{display:none;}
+input[name="black"]
+{
+	border-bottom: 5px solid black;
+   	border-top:1px solid black;
+    border-right:1px solid black;
+    border-left:1px solid black;
+    height:50px;
+    width:50px;
+    font-size: 30px;
+    background:transparent;
+    border-radius:5px;
+   	text-align:center;
+    font-style:bold;
+    color:black;
+    box-shadow: 1px 1px 1px 1px;
+	vertical-align:middle;
+}
+input[name="black"]:focus
+{
+	outline:none;
+}
+input[name="skyblue"]
+{
+	border-bottom: 5px solid skyblue;
+   	border-top:1px solid skyblue;
+    border-right:1px solid skyblue;
+    border-left:1px solid skyblue;
+    height:50px;
+    width:50px;
+    font-size: 30px;
+    background:transparent;
+    border-radius:5px;
+   	text-align:center;
+    font-style:bold;
+    color:skyblue;
+    box-shadow: 1px 1px 1px 1px;
+	vertical-align:middle;
+}
+
+input[name="green"]
+{
+	border-bottom: 5px solid green;
+   	border-top:1px solid green;
+    border-right:1px solid green;
+    border-left:1px solid green;
+    height:50px;
+    width:50px;
+    font-size: 30px;
+    background:transparent;
+    border-radius:5px;
+   	text-align:center;
+    font-style:bold;
+    color:green;
+    box-shadow: 1px 1px 1px 1px;
+}
+input[name="orange"]:focus{outline:none;}
+
+input[name="orange"]
+{
+	border-bottom: 5px solid orange;
+   	border-top:1px solid orange;
+    border-right:1px solid orange;
+    border-left:1px solid orange;
+    height:50px;
+    width:50px;
+    font-size: 30px;
+    background:transparent;
+    border-radius:5px;
+   	text-align:center;
+    font-style:bold;
+    color:orange;
+    box-shadow: 1px 1px 1px 1px;
+}
+input[name="orange"]:focus{outline:none;}
+
+input[name="red"]
+{
+	border-bottom: 5px solid red;
+   	border-top:1px solid red;
+    border-right:1px solid red;
+    border-left:1px solid red;
+    height:50px;
+    width:50px;
+    font-size: 30px;
+    background:transparent;
+    border-radius:5px;
+   	text-align:center;
+    font-style:bold;
+    color:red;
+    box-shadow: 1px 1px 1px 1px;
+}
+input[name="red"]:focus{outline:none;}
+
+input[name="skyblue"]:focus
+{
+	outline:none;
+}
+button
+{
+	background:transparent;
+	border:none;
+}
+button:focus
+{
+	outline:none;
+}
+#submit
+{
+	height:50px;
+	width:150px;
+}
+#reset, #info
+{
+	height:40px;
+	width:40px;
+	vertical-align:middle;
+}
+#help ,#home_img
+{
+	height:50px;
+	width:50px;
+	vertical-align:middle;
+}
+#myhr
+{
+	border: 2px solid black;
+}
+#values
+{
+	display:none;
+}
+#chances, #pass_one, #pass_two, #pass_three, #pass_four
+{
+	height:20px;
+	width:20px;
+	border-radius:5px;
+	text-align:center;
+	font-size:20px;
+}
